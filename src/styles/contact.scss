@@ -1,0 +1,62 @@
+$cream: #fff7e6;
+$darkEarth: #4a3f35;
+$accent: #bcaaa4;
+@font-face {
+    font-family: 'Young Style', sans-serif;
+    font-family: 'Young Style Underlines', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/young-style') format('woff2');
+}
+#app{
+    overflow-x: hidden;
+}
+#header {
+    text-align: center;
+    #banner {
+        min-width: 1000px;
+        position: relative;
+        top: 0;
+        border: outset #4a3f35 4px;
+    }
+    #title {
+        font-family: 'Young Style', sans-serif;
+        font-size: 100px;
+        color: white;
+        margin-top: -200px;
+        position: relative;
+        text-shadow: black 2px 2px;
+    }
+    h2 {
+        color: $darkEarth;
+        font-family: 'Young Style', sans-serif;
+        margin-top: -50px;
+    }
+    #our-email {
+        color: $accent;
+    }
+}
+form {
+    label{
+        display: none;
+    }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    *{
+        padding: 8px;
+        margin: 5px;
+    }
+    #submit{
+        align-self: center;
+        width: 20%;
+        background-color: $darkEarth;
+        font-family: 'Young Style', sans-serif;
+        border-radius: 0.5em;
+        font-size: 20px;
+        color: $accent;
+        border: #4a3f35 2px;
+    }
+    #submit:hover{
+        background-color: #bcaaa4;
+        color: #fff7e6;
+    }
+}

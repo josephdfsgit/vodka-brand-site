@@ -1,0 +1,1 @@
+{"version":3,"file":"src_pages_Message_htmld0544db323c250bed5ae.js","mappings":";;;;;;;;AAAA;AACA;AACA;AACA","sources":["webpack://vodka-brand-site/./src/pages/Message.html"],"sourcesContent":["// Module\nvar code = \"<h1>YOUR MESSAGE WAS SENT</h1>\";\n// Exports\nmodule.exports = code;"],"names":[],"sourceRoot":""}

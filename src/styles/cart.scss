@@ -1,0 +1,98 @@
+$cream: #fff7e6;
+$darkEarth: #4a3f35;
+$accent: #bcaaa4;
+
+@font-face {
+    font-family: 'Young Style', sans-serif;
+    font-family: 'Young Style Underlines', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/young-style') format('woff2');
+}
+#app{
+    flex-direction: column;
+    #title {
+        font-family: 'Young Style', sans-serif;
+        color: $darkEarth;
+        text-align: center;
+        font-size: 40px;
+    }
+    #table-head {
+        display: grid;
+        grid-template-columns: 50% 20% 20% 10%;
+        font-family: 'Young Style', sans-serif;
+        text-align: center;
+        font-weight: 600;
+    }
+    #item-table {
+        display: flex;
+        flex-direction: column;
+        .cart-items {
+            display: grid;
+            grid-template-columns: 50% 20% 20% 10%;
+            .item-names{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .item-price{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 200;
+            }
+            .item-qty{
+                justify-self: center;
+                max-width: 60px;
+                text-align: center;
+                background-color: #bcaaa4;
+                font-family: 'Courier New', Courier, monospace;
+                border: #4a3f35 solid 4px;
+                margin: 5px;
+            }
+            .remove-btn{
+                width: 30px;
+                height: 30px;
+                margin: auto;
+                border-radius: 1em;
+                font-size: 20px;
+                border: none;
+                background-color: #bcaaa4;
+                color: #fff7e6;
+            }
+            .remove-btn:hover{
+                background-color: #4a3f35;
+            }
+        }
+    }
+    #table-total{
+        display: flex;
+        flex-direction: column;
+        #subtotal-row {
+            display: grid;
+            grid-template-columns: 50% 20% 20% 10%;
+            text-align: center;
+            #subttl{
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 400;
+            }
+        }
+        #total-row{
+            display: grid;
+            grid-template-columns: 50% 20% 20% 10%;
+            text-align: center;
+            #totaltitle{
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 800;
+            }
+        }
+    }
+    #checkout-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        #checkout-btn{
+            color: #fff7e6;
+            background-color: #4a3f35;
+            padding: 20px;
+            border-radius: 0.5em;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+$cream: #fff7e6;
+$darkEarth: #4a3f35;
+$accent: #bcaaa4;
+@font-face {
+    font-family: 'Young Style', sans-serif;
+    font-family: 'Young Style Underlines', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/young-style') format('woff2');
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    #title, #name {
+        font-family: 'Young Style', sans-serif;
+        text-align: center;
+        color: #4a3f35;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        #about-txt {
+            width: 90%;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #located {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+            #aside {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #bottles {
+                    height: 300px;
+                    width: 500px;
+                    border: ridge #4a3f35 5px;
+                }
+                #map-txt {
+                    height: 90%;
+                    width: 90%;
+                    padding: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }
+        }
+        #display {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .photos {
+                width: 40%;
+            }
+            #tags {
+                margin-top: -30px;
+                color: #4a3f35;
+                padding: 20px;
+                margin-left: -300px;
+                #name{
+                    font-size: 40px;
+                    margin-bottom: -20px;
+                }
+                p{
+                    font-family: 'Courier New', Courier, monospace;
+                }
+            }
+            #house {
+                border: ridge #4a3f35 5px;
+                margin-right: -150px;
+                margin-left: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+$cream: #fff7e6;
+$darkEarth: #4a3f35;
+$accent: #bcaaa4;
+
+@font-face {
+    font-family: 'Young Style', sans-serif;
+    font-family: 'Young Style Underlines', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/young-style') format('woff2');
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #header {
+        display: flex;
+        flex-direction: row;
+        #title {
+            margin-top: -30px;
+            padding-right: 600px;
+            font-family: 'Young Style', sans-serif;
+            font-size: 80px;
+            color: $darkEarth;
+        }
+        #shop-opt {
+            margin-top: 60px;
+            height: 40px;
+            width: 100px;
+            background-color: #bcaaa4;
+            border: $accent ridge 3px;
+            border-radius: 0.5em;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff7e6;
+        }
+    }
+    #shop-container {
+        margin-top: -50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        .product{
+            width: 320px;
+            height: 380px;
+            border-radius: 0.5em;
+            background-color: $accent;
+            padding: 6px;
+            margin: 20px;
+            border: ridge $darkEarth 4px;
+            #product-info {
+                display: grid;
+                grid-template-columns: 80% 20%;
+                #product-name {
+                    margin-top: 0;
+                    font-family: 'Courier New', Courier, monospace;
+                    padding: 2px;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $darkEarth;
+                }
+                #product-price {
+                    margin-top: 40px;
+                    margin-left: -18px;
+                    font-size: 30px;
+                    font-weight: 100;
+                    font-family: 'Courier New', Courier, monospace;
+                    color: #fff7e6;
+                }
+            }
+        }
+    }
+    .product-img {
+        border: ridge $darkEarth 2px;
+        width: 250px;
+        margin: 20px;
+    }
+}
